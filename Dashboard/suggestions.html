@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiStudy - Personalized Learning Plan</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-['Poppins'] bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <i class="fas fa-graduation-cap mr-2"></i>
+                HiStudy
+            </div>
+            <div class="space-x-6">
+                <a href="../index.php" class="hover:text-pink-200">Home</a>
+                <a href="analysis.html" class="hover:text-pink-200">Analysis</a>
+                <a href="/AI/Genie.html" class="hover:text-pink-200">AskGenie</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12 relative">
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-purple-200 rounded-full filter blur-3xl opacity-30 -z-10"></div>
+            <div class="absolute -bottom-20 left-1/4 w-48 h-48 bg-pink-200 rounded-full filter blur-3xl opacity-20 -z-10"></div>
+            <h1 class="text-5xl font-bold mb-2 gradient-text">Your Personalized Learning Plan</h1>
+            <p class="text-gray-600 text-xl">Tailored suggestions to help you excel</p>
+        </header>
+
+        <!-- Learning Style Summary -->
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 mb-16 transform hover:scale-[1.01] transition-all relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full filter blur-2xl opacity-30 -z-10 -mr-20 -mt-20"></div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="text-6xl text-purple-600 mb-6 md:mb-0 md:mr-8">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-3">Learning Style Analysis</h2>
+                    <p class="text-gray-600 text-base">Based on your performance, you're a <span class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">Visual Learner</span></p>
+                    <p class="mt-2 text-gray-600 text-sm">You learn best through images, diagrams, and spatial understanding. We've tailored your recommendations accordingly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Improvement Tips -->
+        <div class="max-w-5xl mx-auto mb-16">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-chart-line text-indigo-500 mr-3"></i>
+                Improvement Tips
+            </h2>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:scale-[1.01] transition-all border-l-4 border-indigo-500">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center">
+                            <i class="fas fa-clock text-xl text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Time Management</h3>
+                    </div>
+                    <p class="text-gray-600 text-base">Practice time-based quizzes to improve your speed and accuracy. Set aside dedicated study blocks with timers.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:scale-[1.01] transition-all border-l-4 border-pink-500">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                            <i class="fas fa-video text-xl text-pink-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Video Learning</h3>
+                    </div>
+                    <p class="text-gray-600 text-base">Watch topic videos to reinforce your understanding of complex concepts. Visual aids will boost your retention.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:scale-[1.01] transition-all border-l-4 border-purple-500">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+                            <i class="fas fa-book text-xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Practice Tests</h3>
+                    </div>
+                    <p class="text-gray-600 text-base">Take regular practice tests to identify and work on weak areas. Create visual mind maps to organize key concepts.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:scale-[1.01] transition-all border-l-4 border-rose-500">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center">
+                            <i class="fas fa-users text-xl text-rose-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Group Study</h3>
+                    </div>
+                    <p class="text-gray-600 text-base">Join study groups to learn from peers and share knowledge. Teach others to strengthen your own understanding.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Recommendations -->
+        <div class="max-w-5xl mx-auto relative">
+            <div class="absolute -top-20 right-0 w-72 h-72 bg-indigo-200 rounded-full filter blur-3xl opacity-20 -z-10"></div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-graduation-cap text-purple-500 mr-3"></i>
+                Recommended Courses
+            </h2>
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-purple-600 text-3xl mb-4">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-xs px-3 py-1 rounded-full">
+                        Highly Recommended
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Advanced Mathematics</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">4.5 (128)</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Master complex mathematical concepts through visual aids and interactive exercises.</p>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-2 rounded-xl hover:opacity-90 transition-all flex items-center justify-center font-medium">
+                        <i class="fas fa-play-circle mr-2"></i>
+                        Enroll Now
+                    </button>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-pink-600 text-3xl mb-4">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Science Fundamentals</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">4.0 (96)</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Build strong science foundation with experiments and visual demonstrations.</p>
+                    <button class="w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white px-4 py-2 rounded-xl hover:opacity-90 transition-all flex items-center justify-center font-medium">
+                        <i class="fas fa-play-circle mr-2"></i>
+                        Enroll Now
+                    </button>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">English Literature</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">5.0 (64)</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Enhance reading and writing skills through visual storytelling techniques.</p>
+                    <button class="w-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-4 py-2 rounded-xl hover:opacity-90 transition-all flex items-center justify-center font-medium">
+                        <i class="fas fa-play-circle mr-2"></i>
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Analysis Button -->
+        <div class="text-center mt-16">
+            <a href="analysis.html" class="bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-full hover:bg-gray-100 transition-all inline-flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Analysis
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold flex items-center mb-4">
+                        <i class="fas fa-graduation-cap mr-2"></i>
+                        HiStudy
+                    </div>
+                    <p class="text-gray-400">Transforming education through technology and personalization.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="analysis.html" class="text-gray-400 hover:text-white transition-colors">Analysis</a></li>
+                        <li><a href="index.html#quiz" class="text-gray-400 hover:text-white transition-colors">Quiz</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 HiStudy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

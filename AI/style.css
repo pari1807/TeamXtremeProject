@@ -1,0 +1,244 @@
+/* Base styling */
+body.bot-ui {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, rgba(147, 51, 234, 0.2), rgba(219, 39, 119, 0.2));
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+.app-header {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem 1rem 1rem;
+  background: linear-gradient(to right, #9333EA, #DB2777);
+  color: white;
+  border-radius: 20px ;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.heading span {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  padding: 0 2rem;
+}
+
+/* Suggestions */
+.suggestions-heading {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.suggestions-item {
+  background: #ffffff;
+  color: #333333;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.suggestions-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.suggestions-item .material-symbols-rounded {
+  font-size: 3.5rem;
+}
+
+.suggestions-item .text {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Chats Container */
+.chats-container {
+  width: calc(100% - 4rem);
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  min-height: 200px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Chat messages styling */
+.chats-container .message {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.chats-container .bot-message,
+.chats-container .user-message {
+  align-items: flex-start;
+}
+.chats-container .bot-message .message-text,
+.chats-container .user-message .message-text {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 1rem;
+  max-width: 80%;
+}
+.chats-container .bot-message .message-text {
+  background: #ffffff;
+  color: #333;
+  border-bottom-left-radius: 0;
+}
+.chats-container .user-message .message-text {
+  background: linear-gradient(90deg, #9333EA, #DB2777);
+  color: #fff;
+  border-bottom-right-radius: 0;
+  margin-left: auto;
+}
+
+/* Bot reply container and avatar sizing */
+.chats-container .bot-message {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.chats-container .bot-message .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.chats-container .bot-message .message-text {
+  background: linear-gradient(90deg, #9333EA, #DB2777);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0;
+}
+
+/* Prompt container */
+.prompt-container {
+  margin-top: 3rem;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, rgba(147, 51, 234, 0.2), rgba(219, 39, 119, 0.2));
+  padding: 1.5rem;
+  border-top: 3px solid #9333EA;
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-wrapper {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.prompt-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prompt-input {
+  flex: 1 1 90%;
+  max-width: 90%;
+  padding: 1.5rem 2rem;
+  border: 2px solid #9333EA;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-input:focus {
+  border-color: #DB2777;
+}
+
+.prompt-actions button {
+  background: #9333EA;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prompt-actions button:hover {
+  background: #DB2777;
+}
+
+/* Logo container */
+.logo-container {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.logo-container .logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Spacing for main heading */
+.app-header .heading {
+  margin-top: 1.5rem;
+}
+
+/* Prompt textarea - wider and more padding */
+.prompt-input {
+  flex: 1 1 85%;
+  max-width: 85%;
+  padding: 1.25rem 1.5rem;
+}
+
+/* Suggestion box text and icon colors */
+.suggestions-item .material-symbols-rounded {
+  color: #DB2777;
+}
+.suggestions-item .text {
+  color: #9333EA;
+}

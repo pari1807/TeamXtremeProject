@@ -24,7 +24,7 @@ if (isset($message)) {
          <a href="about.php"><span>About Us</span></a>
          <a href="courses.php"><span>Courses</span></a>
          <a href="teachers.php"><span>Teachers</span></a>
-         <a href="contact.php"><span>Contact Us</span></a>
+         <a href="Dashboard/LearnEase.html"><span>LearnEase</span></a>
       </nav>
 
       <form action="search_course.php" method="post" class="search-form">

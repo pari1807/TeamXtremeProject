@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="bot-ui">
+     <header class="app-header">
+      <div class="logo-container">
+        <img src="logo.svg" alt="StudyBuddy Logo" class="logo">
+      </div>
+        <h1 class="heading">AskGenie AI</h1>
+        <h2 class="sub-heading">Your Personal Study Buddy</h2>
+     </header>
+    
+    <div class="container">
+      <h3 class="suggestions-heading">Suggested Questions</h3>
+        <!-- Suggestions List -->
+        <ul class="suggestions" style="list-style-type: none; padding: 0;">
+          <li class="suggestions-item">
+            <span class="material-symbols-rounded">functions</span>
+            <p class="text">Explain the Pythagorean theorem</p>
+          </li>
+          <li class="suggestions-item">
+            <span class="material-symbols-rounded">science</span>
+            <p class="text">What is Newton's second law?</p>
+          </li>
+          <li class="suggestions-item">
+            <span class="material-symbols-rounded">public</span>
+            <p class="text">Describe the process of photosynthesis</p>
+          </li>
+          <li class="suggestions-item">
+            <span class="material-symbols-rounded">history_edu</span>
+            <p class="text">Summarize the causes of World War II</p>
+          </li>
+          <li class="suggestions-item">
+            <span class="material-symbols-rounded">translate</span>
+            <p class="text">Translate 'Bonjour' to English</p>
+          </li>
+          <li class="suggestions-item">
+            <span class="material-symbols-rounded">calculate</span>
+            <p class="text">How to solve quadratic equations?</p>
+          </li>
+        </ul>
+        <div class="chats-container"></div>
+        <!-- Prompt Container -->
+        <div class="prompt-container">
+          <div class="prompt-wrapper">
+    
+            <form action="#" class="prompt-form">
+              <input 
+                type="text" 
+                placeholder="Describe the person or occasion..." 
+                class="prompt-input" 
+                required
+              >
+    
+              <div class="prompt-actions">
+                <button id="send-prompt-btn" class="material-symbols-rounded">
+                  arrow_upward
+                </button>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+    
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

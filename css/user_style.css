@@ -1188,8 +1188,375 @@ header .flex .profile::before {
    width: 100%;
    font-size: 1.5rem;;
  } 
+ /********************************playlist section***********************************/
+ /* Corrected Version */
+.playlist {
+  padding: 4%;
+}
 
-  .newsletter {
+.playlist .row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+/* Playlist Column */
+.playlist .row .col {
+  flex: 1 1 40rem;
+}
+
+/* Save List Button */
+.playlist .row .col .save-list button {
+  padding: 1.2rem 2.5rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--primary-opacity);
+  margin-bottom: 2rem;
+}
+
+/* Button Icon */
+.playlist .row .col .save-list button i {
+  color: var(--color-primary);
+  margin-right: 1rem;
+}
+
+/* Button Text */
+.playlist .row .col .save-list button span {
+  color: var(--color-primary);
+}
+
+/* Hover State */
+.playlist .row .col .save-list button:hover {
+  background-image: var(--gradient2);
+  color: #fff;
+}
+
+.playlist .row .col .save-list button:hover i {
+  color: #fff;
+}
+/* Save List Button Hover - Text Span */
+.playlist .row .col .save-list button:hover span {
+  color: var(--white);
+}
+
+/* Playlist Thumbnail Container */
+.playlist .row .col .thumb {
+  position: relative;
+  height: 30rem;
+}
+
+/* Thumbnail Span Overlay */
+.playlist .row .col .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+}
+
+/* Thumbnail Image */
+.playlist .row .col .thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  object-fit: cover;
+}
+
+/* Tutor Info Section */
+/* Tutor Section */
+.playlist .row .col .tutor {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.playlist .row .col .tutor img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: .5rem;
+  object-fit: cover;
+}
+
+.playlist .row .col .tutor h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+
+.playlist .row .col .tutor span {
+  color: var(--color-secondary);
+  font-size: 1rem;
+}
+
+/* Detail Section */
+/* Playlist Detail Section */
+.playlist .row .col .detail {
+  padding-top: 1rem;
+}
+
+.playlist .row .col .detail h3 {
+  font-size: 1.7rem;
+  color: var(--color-secondary);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.playlist .row .col .detail p {
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: var(--light-color);
+  font-size: 1.2rem;
+}
+
+.playlist .row .col .detail .date {
+  font-size: 1.7rem;
+  padding-top: .5rem;
+}
+
+.playlist .row .col .detail .date i {
+  color: var(--main-color);
+  margin-right: 1rem;
+}
+
+.playlist .row .col .detail span {
+  color: var(--light-color);
+}
+.video-container{
+  padding: 4% 6%;
+}
+.video-container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  color: var(--light-color);
+}
+
+.video-container .box-container .box {
+  position: relative;
+  border-radius: 5rem;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem;;
+}
+.video-container .box-container .box {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: #fff;
+
+}
+
+.video-container .box-container .box img {
+  height: 20rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.video-container .box-container .box i {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 5rem;
+  display: none;
+}
+.video-container .box-container .box:hover i {
+  display: flex;
+}
+.video-container .box-container .box h3{
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+.video-container .box-container .box:hover h3{
+  color: var(--color-pink);
+}
+
+/* --- Watch Video Section Enhancements --- */
+.watch-video .video-details {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.watch-video .video-details video {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+.watch-video .video-details .title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+.watch-video .video-details .info {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.watch-video .video-details .tutor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.watch-video .video-details .tutor img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.watch-video .video-details .tutor-name {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+.watch-video .video-details .tutor span {
+  font-size: 0.95rem;
+  color: #888;
+}
+.watch-video .video-details form.flex {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.watch-video .video-details .btn, .watch-video .video-details button {
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+}
+.watch-video .video-details button[type="submit"]:hover {
+  background-image: var(--gradient2);
+  color: #fff;
+}
+.watch-video .video-details button[type="submit"]:hover i,
+.watch-video .video-details button[type="submit"]:hover span {
+  color: #fff;
+}
+
+
+.watch-video .description {
+  padding-top: 2rem;
+}
+
+.watch-video .description p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+/* --- End of Watch Video Section Enhancements --- */
+/* --- Comments --- */
+.comments {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.comments .add-comment {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: .5rem;
+  margin: 5%;
+  margin-bottom: 3rem;
+}
+
+.comments .add-comment textarea {
+  border-radius: .5rem;
+  padding: 1.4rem;
+  width: 100%;
+  height: 20rem;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  resize: none;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.comments .add-comment .btn{
+  margin-top:2rem;
+}
+
+.comments .show-comments {
+  background-color: var(--white);
+  border-radius: .5rem;
+  padding: 2rem;
+  display: grid;
+  gap: 2.5rem;
+  margin: 5%; 
+  box-shadow: var(--box-shadow);
+}
+.comments .show-comments .user{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.comments .show-comments .user img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comments .show-comments .user h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+  text-transform: capitalize;
+}
+.comments .show-comments .user span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+.comments .show-comments .text{
+  border-radius: .5rem;
+  background-color: var(--primary-opacity);
+  padding: 1rem 1.5rem;
+  color: var(--black);
+  margin: .5rem 0;
+  position: relative;
+  z-index: 0;
+  white-space: pre-line;
+  font-size: 1.5rem;
+}
+.comments .show-comments .text::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  width: 2rem;
+  height: 1.2rem;
+  background-color: var(--primary-opacity);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.newsletter {
     background-image: url('../image/dots.png');
     background-repeat: no-repeat;
     background-color: #2f57ef;

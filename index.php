@@ -128,26 +128,26 @@ $total_bookmarks = $select_bookmarks->rowCount();
 
     <div class="box">
       <img src="image/icons-01.png" alt="Fast Performance Icon">
-      <h3>fast performance</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reprehenderit eum.</p>
+      <h3>Fast Performance</h3>
+      <p>Experience lightning-fast load times and seamless navigation throughout the platform.</p>
     </div>
 
     <div class="box">
-      <img src="image/icons-02.png" alt="Fast Performance Icon">
-      <h3>fast performance</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reprehenderit eum.</p>
+      <img src="image/icons-02.png" alt="Secure Learning Icon">
+      <h3>Secure Learning</h3>
+      <p>Your data and progress are protected with industry-leading security measures.</p>
     </div>
 
     <div class="box">
-      <img src="image/icons-03.png" alt="Fast Performance Icon">
-      <h3>fast performance</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reprehenderit eum.</p>
+      <img src="image/icons-03.png" alt="Expert Instructors Icon">
+      <h3>Expert Instructors</h3>
+      <p>Learn from top educators and professionals with real-world experience.</p>
     </div>
 
     <div class="box">
-      <img src="image/icons-04.png" alt="Fast Performance Icon">
-      <h3>fast performance</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reprehenderit eum.</p>
+      <img src="image/icons-04.png" alt="Flexible Access Icon">
+      <h3>Flexible Access</h3>
+      <p>Study anytime, anywhere, and on any device with our fully responsive platform.</p>
     </div>
 
   </div>
@@ -179,14 +179,21 @@ $total_bookmarks = $select_bookmarks->rowCount();
     <div class="box">
 
       <div class="tutor">
-        <img src="uploaded_files/<?= $fetch_tutor['image']; ?>" alt="Tutor Image">
+        <img src="uploaded_files/IZUZ8vtCrn.png" alt="Tutor Image">
         <div>
-          <h3><?= htmlspecialchars($fetch_tutor['name']); ?></h3>
+          <h3>Paritosh</h3>
           <span><?= htmlspecialchars($fetch_courses['date']); ?></span>
         </div>
       </div>
 
-      <img src="uploaded_files/<?= $fetch_courses['thumb']; ?>" class="thumb" alt="Course Image">
+      <img src="<?php 
+        $thumb_path = 'uploaded_files/' . $fetch_courses['thumb'];
+        if (!empty($fetch_courses['thumb']) && file_exists($thumb_path)) {
+          echo $thumb_path;
+        } else {
+          echo 'uploaded_files/default-course.jpg'; // fallback image
+        }
+      ?>" class="thumb" alt="Course Image">
       <h3 class="title"><?= htmlspecialchars($fetch_courses['title']); ?></h3>
       <a href="playlist.php?get_id=<?= $course_id; ?>" class="btn">View Course</a>
 

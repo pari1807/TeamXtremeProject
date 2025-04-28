@@ -51,10 +51,7 @@ $total_bookmarks = $select_bookmarks->rowCount();
     <div class="box">
       <h1>Build the skills to drive your career</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Cumque impedit ullam omnis adipisci eum. Molestias quos maxime dignissimos, 
-        atque, nam explicabo cum quibusdam facere, officiis saepe exercitationem 
-        illum modi dicta!
+      Education is the most powerful tool we can use to change the world. It is not just about absorbing information, but about cultivating curiosity, inspiring innovation, and empowering minds to shape a better future.
       </p>
       <a href="courses.php" class="btn">View Courses</a>
     </div>
@@ -322,12 +319,7 @@ $total_bookmarks = $select_bookmarks->rowCount();
         <span>TOP-NOTCH FEATURES</span><br>
         <h1>Everything you need to succeed.</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga voluptatibus
-          necessitatibus dolore aspernatur quis blanditiis dolor enim facere, pariatur totam
-          tenetur voluptas qui, molestiae, commodi iusto quia nam! Expedita?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga voluptatibus
-          necessitatibus dolore aspernatur quis blanditiis dolor enim facere, pariatur totam
-          tenetur voluptas qui, molestiae, commodi iusto quia nam! Expedita?
+        Our platform uses smart analytics to identify slow learners, offering adaptive lessons, micro-quizzes, and personalized study paths. With interactive tutor bots, gamified rewards, and a supportive peer system, every learner grows confidently at their own pace — no one is left behind.
         </p>
         <a href="about.php" class="btn">Know more about us</a>
       </div>

@@ -5,8 +5,7 @@
     <h1>Subscribe Our Newsletter</h1>
 
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam explicabo sit est eos<br>
-      earum reprehenderit inventore nam autem corrupti rerum!
+      Get the latest updates on learning trends, expert tips, and new courses. <br> Stay ahead with insights designed to power your success in education and beyond. <br> Join our community and unlock endless learning opportunities!
     </p>
 
     <div class="input-field">
@@ -81,7 +80,7 @@
 </div>
 
 <div class="bottom">
-    <p>Copyright © 2023 code with selena. All Rights Reserved</p>
+    <p>Copyright © 2025 code with selena. All Rights Reserved</p>
 </div>
     </div>
 </footer>

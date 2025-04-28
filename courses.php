@@ -65,6 +65,9 @@ if (isset($_COOKIE['user_id'])) {
         $select_tutor = $conn->prepare("SELECT * FROM tutors WHERE id = ?");
         $select_tutor->execute([$fetch_courses['tutor_id']]);
         $fetch_tutor = $select_tutor->fetch(PDO::FETCH_ASSOC);
+        if (!$fetch_tutor) {
+            $fetch_tutor = ['image' => 'default.png', 'name' => 'Unknown Tutor', 'profession' => ''];
+        }
     ?>
 
     <div class="box">
